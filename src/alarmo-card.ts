@@ -333,6 +333,7 @@ export class AlarmoCard extends SubscribeMixin(LitElement) {
                 @focus=${this._clearCodeError}
                 type="password"
                 id="code_input"
+                readonly
                 .inputmode=${this._alarmoConfig?.code_format === FORMAT_NUMBER ? 'numeric' : 'text'}
               ></ha-textfield>
             `}
@@ -819,4 +820,5 @@ console.info(
   `%c  ALARMO-CARD  \n%c  Version: ${CARD_VERSION.padEnd(7, ' ')}`,
   'color: orange; font-weight: bold; background: black',
   'color: white; font-weight: bold; background: dimgray'
+
 );
