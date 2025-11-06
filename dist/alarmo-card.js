@@ -537,6 +537,7 @@ var He=function(e){return function(t,i){void 0!==i?i.addInitializer(function(){c
             id="code"
             .label=${this.hass.localize("ui.dialogs.enter_code.input_label")}
             type="password"
+            readonly
             inputmode="text"
             @input=${e=>{this._clearCodeError(),this._input=e.target.value,this._setCodeClearTimer()}}
             @focus=${this._clearCodeError}
